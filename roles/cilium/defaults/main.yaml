@@ -109,7 +109,7 @@ cilium_vars:
         mode: shared
       service:
         # -- Assign the `CiliumLoadBalancerIPPool` blocks start address
-        ip: 192.168.4.20
+        ip: 192.168.0.200
     ip_masq_agent:
       enabled: false
       non_masquerade_cidrs:
@@ -127,9 +127,9 @@ cilium_vars:
       ip_pool:
         blocks:
           # -- `CiliumLoadBalancerIPPool` blocks start address
-          start: 192.168.4.20
+          start: 192.168.0.200
           # -- `CiliumLoadBalancerIPPool` blocks stop address
-          stop: 192.168.4.100
+          stop: 192.168.0.250
         name: cilium-ip-pool
       l2_announcement_policy:
         name: cilium-l2-announcement-policy
@@ -149,7 +149,7 @@ cilium_vars:
   release:
     cli:
       # -- See [documentation](https://axivo.com/k3s-cluster/tutorials/handbook/server/#hardware), for details
-      file: cilium-linux-arm64.tar.gz
+      file: cilium-linux-x86_64.tar.gz
       repository:
         name: cilium-cli
         org: cilium
@@ -163,7 +163,7 @@ cilium_vars:
       version: v1.2.1
     hubble:
       # -- See [documentation](https://axivo.com/k3s-cluster/tutorials/handbook/server/#hardware), for details
-      file: hubble-linux-arm64.tar.gz
+      file: hubble-linux-x86_64.tar.gz
       repository:
         name: hubble
         org: cilium
