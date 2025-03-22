@@ -1,4 +1,5 @@
-# Homelab K3s Cluster 3 Master nodes & 3 Worker nodes
+# Homelab K3s Cluster 
+# 3 Master nodes & 3 Worker nodes
 
 High Availability K3s cluster, deployed with Ansible.
 
