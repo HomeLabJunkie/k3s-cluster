@@ -13,7 +13,7 @@ k3s_vars:
       port: 6444
     # -- Related to `server.api.host` key
     tls_san:
-      - 192.168.1.210
+      - 192.168.1.216
   network:
     interface: eno1
   release:
@@ -40,7 +40,7 @@ k3s_vars:
     api:
       # -- Related to `cluster.tls_san` key,
       # used as frontend bind IP for Haproxy loadbalancer and populated into `/.kube/config` file
-      host: 192.168.1.210
+      host: 192.168.1.216
       port: 6443
   service:
     debug: false
