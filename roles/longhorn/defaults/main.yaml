@@ -7,7 +7,7 @@ longhorn_vars:
       # -- See [documentation](https://axivo.com/k3s-cluster/tutorials/handbook/longhorn/#backup), for details
 #      target: cifs://nas.noty.cc/backup
       target: s3://longhorn@us-east-1/
-      secret_name: longhorn-minio-credentials
+      secret_name: longhorn-backup-credentials
       secret_namespace: kube-system
     default_settings:
       # -- See [documentation](https://longhorn.io/docs/latest/references/settings/#allow-collecting-longhorn-usage-metrics), for details
