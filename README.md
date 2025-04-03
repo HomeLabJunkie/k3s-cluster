@@ -1,6 +1,6 @@
-# Homelab K3s Cluster based on https://axivo.com/k3s-cluster 
-# 3 Master nodes & 3 Worker nodes
-# Workloads on all nodes
+## Homelab K3s Cluster based on https://axivo.com/k3s-cluster 
+## 3 Master nodes & 3 Worker nodes
+## Workloads on all nodes
 
 High Availability K3s cluster, deployed with Ansible.
 
