@@ -1,0 +1,43 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: "2025-03-24T02:53:18Z"
+  deletionTimestamp: "2025-03-24T13:29:38Z"
+  labels:
+    k8slens-edit-resource-version: v1
+    kubernetes.io/metadata.name: kubeapps
+  name: kubeapps
+  resourceVersion: "1306779"
+  uid: 319fb69a-d086-4f79-87f0-641f3423a4c3
+spec:
+  finalizers:
+status:
+  conditions:
+  - lastTransitionTime: "2025-03-24T13:29:45Z"
+    message: All resources successfully discovered
+    reason: ResourcesDiscovered
+    status: "False"
+    type: NamespaceDeletionDiscoveryFailure
+  - lastTransitionTime: "2025-03-24T13:29:45Z"
+    message: All legacy kube types successfully parsed
+    reason: ParsedGroupVersions
+    status: "False"
+    type: NamespaceDeletionGroupVersionParsingFailure
+  - lastTransitionTime: "2025-03-24T13:29:45Z"
+    message: All content successfully deleted, may be waiting on finalization
+    reason: ContentDeleted
+    status: "False"
+    type: NamespaceDeletionContentFailure
+  - lastTransitionTime: "2025-03-24T13:29:45Z"
+    message: 'Some resources are remaining: apprepositories.kubeapps.com has 1 resource
+      instances'
+    reason: SomeResourcesRemain
+    status: "True"
+    type: NamespaceContentRemaining
+  - lastTransitionTime: "2025-03-24T13:29:45Z"
+    message: 'Some content in the namespace has finalizers remaining: apprepositories.kubeapps.com/apprepo-cleanup-finalizer
+      in 1 resource instances'
+    reason: SomeFinalizersRemain
+    status: "True"
+    type: NamespaceFinalizersRemaining
+  phase: Terminating
